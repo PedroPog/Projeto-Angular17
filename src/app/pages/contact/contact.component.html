@@ -1,0 +1,11 @@
+<section>
+  <h1>Contato</h1>
+  <ul>
+    <li *ngFor="let item of items">
+      <a href="{{item.link}}">
+        <img width="64" height="64" src="{{item.img}}" alt="{{item.img}}">
+      </a>
+      {{item.name}}
+    </li>
+  </ul>
+</section>

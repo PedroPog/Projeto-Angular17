@@ -1,0 +1,33 @@
+
+.body-section{
+  max-width: 99%;
+  min-height: 83%;
+  margin: 0 auto;
+}
+#menu{
+  width: 100%;
+  height: 100%;
+  background-color: #0000007d;
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  .mdc-icon-button{
+    position: absolute;
+    left: 46%;
+    top: 2%;
+    color: white;
+  }
+}
+.menus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 1.8rem;
+    color: white;
+    &:active{
+      text-shadow: 1px 1px 4px black;
+    }
+  }
+}

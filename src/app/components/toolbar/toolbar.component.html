@@ -1,0 +1,22 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button class="icon-menu" aria-label="Menu para dispositivo mobile" (click)="submit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="titulo" routerLink="/home">{{title}}</span>
+  <ul>
+    <li routerLink="/contatc" routerLinkActive="activebutton" >Contato</li>
+    <li routerLink="/support" routerLinkActive="activebutton" >Suporte</li>
+  </ul>
+  <button mat-icon-button
+    class="icon-config" [matMenuTriggerFor]="menu"
+    aria-label="Menu para dispositivo Web">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" color="primary">
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
